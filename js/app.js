@@ -23,7 +23,7 @@ if (ScrollTrigger.isToush !== 1) {
 
   let itemsL = gsap.utils.toArray('.gallrey__left .gallery__item')
   itemsL.forEach(item => {
-    gsap.fromTo(item, { x: -50, opacity: 0 }, {
+    gsap.fromTo(item, { x: 50, opacity: 0 }, {
       opacity: 1, x: 0,
       scrollTrigger: {
         trigger: item,
@@ -36,7 +36,7 @@ if (ScrollTrigger.isToush !== 1) {
 
   let itemsR = gsap.utils.toArray('.gallrey__right .gallery__item')
   itemsR.forEach(item => {
-    gsap.fromTo(item, { x: 50, opacity: 0 }, {
+    gsap.fromTo(item, { x: -50, opacity: 0 }, {
       opacity: 1, x: 0,
       scrollTrigger: {
         trigger: item,
